@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --color-bg: #161A21;
+    --color-bg-btn: #F75C2F;
+    --color-bg-code: #222731;
+    --color-bg-input: #282E3A;
+    --color-txt: #EBEFF3;
+    --rounded: 8px;
+    --padding: 15px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-txt);
+    margin: 0;
+}
+
+input {
+    border: none;
+    padding: var(--padding);
+    background-color: var(--color-bg-input);
+    outline: none;
+    border-radius: var(--rounded);
+    color: var(--color-txt);
+    font-family: inherit;
+    width: 100%; /* Ensure input fills available space */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+input[type="submit"] {
+    background-color: var(--color-bg-btn);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 5px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+}
+
+input[type="submit"]:hover {
+    background-color: #e84e2a;
+}
+
+code {
+    border-radius: var(--rounded);
+    padding: var(--padding);
+    font-size: 16px;
+    background: var(--color-bg-code);
+    font-family: "Space Mono", monospace;
+}
+
+.wrapper {
+    position: relative; /* Change to relative for containing block */
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.source_code {
+    width: 100%; /* Ensure code block fills available space */
+    margin-top: 20px; /* Space between input and code display */
+}
+
+p {
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+.hljs {
+    background-color: var(--color-bg-code);
+}

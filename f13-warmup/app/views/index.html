@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> 
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <form method="GET">
+            <input type="message" name="message" placeholder="Input goes here...">
+            <input type="submit" value="Send">
+        </form>
+        <p><%= @message %></p>
+    </div>
+
+    <pre class="source_code">
+        <code class="language-ruby"><%= $SOURCE_CODE %></code>
+    </pre>
+</div>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
